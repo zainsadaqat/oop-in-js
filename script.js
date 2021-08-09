@@ -1,5 +1,26 @@
 // JS is all about Objects
 
+console.log(
+  '-------------------------- Factory Function ----------------------------------------'
+);
+
+// Factory Function
+const createFunction = (radius) => {
+  return {
+    radius,
+    draw: function () {
+      console.log('Radius: ', radius);
+    },
+  };
+};
+
+const circle = createFunction(1);
+circle.draw();
+
+console.log(
+  '-------------------------- Object Literal ----------------------------------------'
+);
+
 // Object Literal
 const objectLiteral = {
   location: {
